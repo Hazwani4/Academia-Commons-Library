@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia Commons</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f0fa;
+      color: #3a2e2a;
+    }
+    header {
+      background: linear-gradient(135deg, #d9cbe9, #d7cced);
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #4a3f61;
+    }
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-title img {
+      max-width: 130px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #cdbbe2;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #3a2e2a;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #6e4db2;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #5b4a7f;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #c2b3e0;
+      padding-bottom: 0.3rem;
+      max-width: fit-content;
+    }
+    .program-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .program-card {
+      background: #fdfaff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(100, 90, 70, 0.1);
+      border: 1px solid #e2dff0;
+      transition: box-shadow 0.3s ease;
+    }
+    .program-card:hover {
+      box-shadow: 0 4px 12px rgba(100, 90, 70, 0.25);
+    }
+    .program-card h3 {
+      margin-top: 0;
+      color: #6e4db2;
+    }
+    form label {
+      font-weight: 600;
+      color: #5d4d3d;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+      border: 1px solid #bfb4d6;
+      border-radius: 6px;
+      background-color: #faf8ff;
+      font-size: 1rem;
+      color: #4a3f35;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form select:focus, form textarea:focus {
+      outline: none;
+      border-color: #6e4db2;
+      background-color: #fffdfa;
+    }
+    form button {
+      background-color: #6e4db2;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #fefcf8;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #5b3ea0;
+    }
+    footer {
+      background-color: #cdbbe2;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #3a2e2a;
+      margin-top: 3rem;
+    }
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #6e4db2;
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="academia-logo.png" alt="Academia Commons Logo" />
+      <h1>Academia Commons</h1>
+      <p>Empowering Global Knowledge through Smart Libraries</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision & Mission</a>
+    <a href="#services">Services</a>
+    <a href="#register">Register</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p><strong>Academia Commons</strong> is a smart academic library designed to meet the evolving needs of students, researchers, and educators. We focus on providing open access to high-quality knowledge materials, promoting academic collaboration, and integrating innovative technologies to support global education.</p>
+    </section>
+
+    <section id="vision">
+      <h2>Our Vision</h2>
+      <p>To empower global knowledge by providing open access to academic resources and fostering collaboration.</p>
+      <h2>Our Mission</h2>
+      <p>To support research and learning by offering various knowledge materials, promoting accessibility and encouraging academic collaboration.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="program-list">
+        <div class="program-card">
+          <h3>Digital Library</h3>
+          <p>Access thousands of e-books, journals, and articles from anywhere.</p>
+        </div>
+        <div class="program-card">
+          <h3>Smart Catalog</h3>
+          <p>Use AI-powered tools to search and discover academic resources faster.</p>
+        </div>
+        <div class="program-card">
+          <h3>Research Support</h3>
+          <p>Guidance on citations, literature review, and data management.</p>
+        </div>
+        <div class="program-card">
+          <h3>Workshops</h3>
+          <p>Attend training on research tools, AI in learning, and academic writing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="register">
+      <h2>Membership Registration</h2>
+      <form id="registration-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="institution">Institution</label>
+        <input type="text" id="institution" name="institution" required />
+
+        <label for="program">Interested Service</label>
+        <select id="program" name="program" required>
+          <option value="">-- Please Select --</option>
+          <option value="Digital Library">Digital Library</option>
+          <option value="Smart Catalog">Smart Catalog</option>
+          <option value="Research Support">Research Support</option>
+          <option value="Workshops">Workshops</option>
+        </select>
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="feedback">
+      <h2>Customer Feedback</h2>
+      <form id="feedback-form">
+        <label for="feedback-name">Name</label>
+        <input type="text" id="feedback-name" name="feedback-name" required />
+
+        <label for="feedback-message">Your Feedback</label>
+        <textarea id="feedback-message" name="feedback-message" rows="4" required></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> academiacommons@gmail.com</p>
+      <p><strong>Phone:</strong> 011-3854 000</p>
+      <p><strong>Address:</strong><br>Academia Commons,<br>Level 3, Knowledge Building,<br>Universiti Pintar Malaysia,<br>Cyberjaya, Selangor 63000</p>
+    </section>
+  </div>
+
+  <div class="chatbot">
+    💬 Need help? Chat with us!
+  </div>
+
+  <footer>
+    &copy; 2025 Academia Commons. Powered by Smart Library Innovation.
+  </footer>
+
+</body>
+</html>
